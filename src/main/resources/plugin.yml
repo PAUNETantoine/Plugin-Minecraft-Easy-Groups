@@ -1,0 +1,28 @@
+name: EasyGroups
+version: '${project.version}'
+main: org.gamingtoine.easygroups.EasyGroups
+author: gamingtoine
+
+permissions:
+  easygroups.group.addRemove:
+    description: "You can add and remove players from a group without asking invitation or using the leave command."
+    default: op
+  easygroups.group.use:
+    description: "All the commands you can do with /group."
+    default: true
+  easygroups.easygroup.use:
+    description: "All the commands you can do with /easygroup."
+    default: true
+
+
+
+
+commands:
+  group:
+    permission: easygroups.group.use
+    permission-message: "You are not allow to perform this command."
+    description: "All commands to create/delete or configurate a group."
+  easygroups:
+    permission: easygroups.easygroup.use
+    permission-message: "You are not allow to perform this command."
+    description: "All commands to see the coordinates from your group"
